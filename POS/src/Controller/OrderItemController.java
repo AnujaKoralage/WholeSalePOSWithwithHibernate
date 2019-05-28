@@ -148,7 +148,7 @@ public class OrderItemController {
 
 
         ObservableList cids = cmb_cid.getItems();
-        cids = orderBOImpl.getAllCustomerId(cids);
+//        cids = orderBOImpl.getAllCustomerId(cids);
 
         PreparedStatement pst2 = con.prepareStatement(sql2);
         ResultSet rst2 = pst2.executeQuery();

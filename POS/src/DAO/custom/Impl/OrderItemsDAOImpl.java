@@ -4,6 +4,7 @@ import DAO.DAO.custom.OrderItemsDAO;
 import Entities.OrderItems;
 import Entities.OrderItemsPK;
 import UtilityClasses.DBConnection;
+import org.hibernate.Session;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,55 +15,42 @@ import java.util.List;
 
 public class OrderItemsDAOImpl implements OrderItemsDAO {
 
-    public boolean save(OrderItems orderitems) throws SQLException {
-        String sql = "INSERT INTO orderitems VALUES(?,?,?)";
-
-        return CRUDUtil.execute(sql,orderitems.getOrderItemsPK().getOrderid(),orderitems.getOrderItemsPK().getItemcode(),orderitems.getQty());
-
+    private Session session;
+    public void save(OrderItems orderitems) throws SQLException {
+        session.save(orderitems);
     }
 
-    public boolean update(OrderItems orderitems) throws SQLException {
-        String sql = "UPDATE orderitems SET itemCode=?,qty=? WHERE id=?";
-
-        return CRUDUtil.execute(sql,orderitems.getOrderItemsPK().getItemcode(),orderitems.getQty(),orderitems.getOrderItemsPK().getOrderid());
+    public void update(OrderItems orderitems) throws SQLException {
+        session.merge(orderitems);
     }
 
-    public  boolean delete(OrderItemsPK orderItemsPK) throws SQLException {
-        String sql = "DELETE FROM orderitems WHERE orderid=? AND itemcode=?";
-        return CRUDUtil.execute(sql,orderItemsPK.getOrderid(),orderItemsPK.getItemcode());
+    public  void delete(OrderItemsPK orderItemsPK) throws SQLException {
+        OrderItemsPK load = session.load(OrderItemsPK.class, orderItemsPK);
     }
 
     public List<OrderItems> findAll() throws SQLException {
-        String sql = "SELECT * FROM orderitems";
-
-        ResultSet rst = CRUDUtil.execute(sql);
-        ArrayList<OrderItems> arrayList = new ArrayList<>();
-
-        while (rst.next()){
-            arrayList.add(new OrderItems(new OrderItemsPK(rst.getString("orderid"),rst.getString("itemcode")),rst.getString("qty")));
-        }
-        return arrayList;
+        List<OrderItems> list = session.createQuery("from Entities.OrderItems", OrderItems.class).list();
+        return list;
     }
 
     public OrderItems find(OrderItemsPK orderItemsPK) throws SQLException {
-        String sql = "SELECT * FROM orderitems WHERE orderid=? AND itemCode=?";
-
-        ResultSet rst = CRUDUtil.execute(sql,orderItemsPK.getOrderid(),orderItemsPK.getItemcode());
-        if (rst.next()){
-            return new OrderItems(new OrderItemsPK(rst.getString("orderid"),rst.getString("itemcode")),rst.getString("qty"));
-        }
-        else
-            return null;
+        OrderItems orderItems = session.createNativeQuery("SELECT * FROM orderitems WHERE orderid=? AND itemCode=?", OrderItems.class)
+                .setParameter(1, orderItemsPK.getOrderid()).setParameter(2, orderItemsPK.getItemcode()).uniqueResult();
+        return orderItems;
 
     }
 
     @Override
     public void updateQtyOnHand(String itemcode,String qtyOnHand) {
-        String sql3 = "UPDATE item SET qty=? WHERE code=?";
-        try {
-            CRUDUtil.execute(sql3,qtyOnHand,itemcode);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        session.createNativeQuery("UPDATE item SET qty=? WHERE code=?").setParameter(1,qtyOnHand)
+                .setParameter(2,itemcode).executeUpdate();
+    }
+
+    public Session getSession() {
+        return session;
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
     }
 }

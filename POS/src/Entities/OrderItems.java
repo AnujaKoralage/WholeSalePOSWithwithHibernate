@@ -1,9 +1,23 @@
 package Entities;
 
+import javax.persistence.*;
+
+@Entity
 public class OrderItems extends SuperEntity{
 
+    @EmbeddedId
     private OrderItemsPK orderItemsPK;
     private String qty;
+
+    @ManyToOne
+    @JoinColumn (name = "orderid" ,referencedColumnName = "orderid", insertable = false, updatable = false)
+    private
+    OrderDetails orderDetails;
+
+    @ManyToOne
+    @JoinColumn (name = "itemcode",referencedColumnName = "code", insertable = false, updatable = false)
+    private
+    Item item;
 
     public OrderItems() {
     }
@@ -40,5 +54,17 @@ public class OrderItems extends SuperEntity{
                 "orderItemsPK=" + orderItemsPK +
                 ", qty='" + qty + '\'' +
                 '}';
+    }
+
+    public OrderDetails getOrderDetails() {
+        return orderDetails;
+    }
+
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
     }
 }

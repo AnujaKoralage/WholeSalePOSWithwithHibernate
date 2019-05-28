@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface CRUDDAO<T extends SuperEntity,ID> extends SuperDAO {
 
-    boolean save(T entity) throws Exception;
+    void save(T entity) throws Exception;
 
-    boolean update(T entity) throws Exception;
+    void update(T entity) throws Exception;
 
-    boolean delete(ID entityID) throws Exception;
+    void delete(ID entityID) throws Exception;
 
     List<T> findAll() throws Exception;
 

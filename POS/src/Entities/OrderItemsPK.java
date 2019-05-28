@@ -1,8 +1,15 @@
 package Entities;
 
-public class OrderItemsPK {
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import java.io.Serializable;
 
+@Embeddable
+public class OrderItemsPK implements Serializable {
+
+    @Column(name = "orderid")
     private String orderid;
+    @Column(name = "itemcode")
     private String itemcode;
 
     public OrderItemsPK() {

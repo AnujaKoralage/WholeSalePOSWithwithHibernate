@@ -3,6 +3,52 @@
   <component name="ChangeListManager">
     <list default="true" id="f7938b28-7373-4a7a-9401-4a65cf10d2cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/POS/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Business/custom/CustomerBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Business/custom/CustomerBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Business/custom/ItemBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Business/custom/ItemBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Business/impl/ItemBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Business/impl/ItemBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Controller/CustomerManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Controller/CustomerManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Controller/ItemManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Controller/ItemManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Controller/OrderItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Controller/OrderItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/DAO/CRUDDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/DAO/CRUDDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/CRUDUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/ItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/ItemDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderDetailsDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderDetailsDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderItemsDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderItemsDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Entities/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Entities/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Entities/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Entities/OrderDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Entities/OrderItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Entities/OrderItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/Entities/OrderItemsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/Entities/OrderItemsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/POS/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/custom/CustomerBO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/custom/CustomerBO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/custom/ItemBO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/custom/ItemBO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/impl/CustomerBOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/impl/CustomerBOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/impl/CustomerBOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/impl/CustomerBOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/impl/ItemBOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/impl/ItemBOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/impl/ItemBOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/impl/ItemBOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/impl/OrderBOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/impl/OrderBOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Business/impl/OrderBOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Business/impl/OrderBOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Controller/CustomerManageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Controller/CustomerManageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Controller/CustomerManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Controller/CustomerManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Controller/ItemManageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Controller/ItemManageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Controller/ItemManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Controller/ItemManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/DAO/CRUDDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/DAO/CRUDDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/CRUDUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/ItemDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/ItemDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/OrderDetailsDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/OrderDetailsDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/OrderItemsDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/DAO/custom/Impl/OrderItemsDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Entities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Entities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Entities/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Entities/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Entities/OrderDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Entities/OrderDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Entities/OrderItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Entities/OrderItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAO/Entities/OrderItemsPK.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAO/Entities/OrderItemsPK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DAO/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DAO/Test.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +89,21 @@
         <item name="simplepos@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="simplepos: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="testlol: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="customer: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="simplepos@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="simplepos: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="orderdetails: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="simplepos@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="simplepos: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="orderitems: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -150,26 +210,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="customer" value="2" />
+          <entry key="fxml" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="30" />
-          <entry key="properties" value="2" />
+          <entry key="java" value="79" />
+          <entry key="properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="30" />
+          <entry key="Database Element" value="2" />
+          <entry key="JAVA" value="79" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="2" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="1513" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="1513" />
         </counts>
       </usages-collector>
     </session>
@@ -179,8 +243,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="128">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,11 +252,112 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/POS/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Entities/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="912">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Entities/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
+                <element signature="e#1254#1255#0" expanded="true" />
+                <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1370#1371#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="17" column="103" selection-start-line="17" selection-start-column="103" selection-end-line="17" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/POS/src/Controller/OrderItemController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="150" column="2" selection-start-line="150" selection-start-column="2" selection-end-line="150" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1627#1628#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
+                <element signature="e#1712#1713#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderItemsPK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -235,36 +400,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/POS/src/DAO/ItemDAOImpl.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/OrderDetailsDAOImpl.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/OrderItemsDAOImpl.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/Impl/CustomerDAOImpl.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/ItemDao.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/Impl/ItemDAOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/test/Test.java" />
-        <option value="$PROJECT_DIR$/POS/src/Controller/ItemManageController.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/DAOTypes.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/DAOFactory.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/CustomerBO.java" />
-        <option value="$PROJECT_DIR$/POS/src/Entities/Customer.java" />
-        <option value="$PROJECT_DIR$/POS/src/Entities/Item.java" />
-        <option value="$PROJECT_DIR$/POS/src/Entities/OrderDetails.java" />
-        <option value="$PROJECT_DIR$/POS/src/Entities/OrderItems.java" />
-        <option value="$PROJECT_DIR$/POS/src/DAO/SuperDAO.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/DAO/custom/ItemDao.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/ItemBO.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/DAO/custom/OrderDetailsDAO.java" />
         <option value="$PROJECT_DIR$/POS/src/DTO/OrderDetailsDTO.java" />
         <option value="$PROJECT_DIR$/POS/src/DTO/OrderItemDTO.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/DAO/custom/OrderItemsDAO.java" />
-        <option value="$PROJECT_DIR$/POS/src/DAO/CRUDDAO.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/DAO/custom/CustomerDAO.java" />
-        <option value="$PROJECT_DIR$/POS/src/Controller/OrderItemController.java" />
         <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/CRUDUtil.java" />
-        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/ItemDAOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderDetailsDAOImpl.java" />
         <option value="$PROJECT_DIR$/LamdaExpressionAndMethodRef/src/FuntionalInt.java" />
         <option value="$PROJECT_DIR$/LamdaExpressionAndMethodRef/src/Demo.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/custom/custom/impl/CustomerBOImpl.java" />
@@ -274,18 +426,31 @@
         <option value="$PROJECT_DIR$/POS/src/Business/OrderBO.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/Business/custom/impl/OrderBOImpl.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/BOTypes.java" />
-        <option value="$PROJECT_DIR$/POS/src/Business/custom/CustomerBO.java" />
-        <option value="$PROJECT_DIR$/POS/src/Business/custom/ItemBO.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/custom/OrderBO.java" />
         <option value="$PROJECT_DIR$/POS/src/Business/BOFactory.java" />
-        <option value="$PROJECT_DIR$/POS/src/Controller/CustomerManageController.java" />
-        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderItemsDAOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/src/Business/impl/ItemBOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java" />
-        <option value="$PROJECT_DIR$/POS/resources/application.properties" />
-        <option value="$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/POS/.gitignore" />
+        <option value="$PROJECT_DIR$/POS/src/Entities/OrderItemsPK.java" />
+        <option value="$PROJECT_DIR$/POS/src/Entities/Item.java" />
+        <option value="$PROJECT_DIR$/POS/src/DAO/CRUDDAO.java" />
+        <option value="$PROJECT_DIR$/POS/src/DAO/SuperDAO.java" />
+        <option value="$PROJECT_DIR$/POS/test/Test.java" />
+        <option value="$PROJECT_DIR$/POS/src/Business/custom/CustomerBO.java" />
+        <option value="$PROJECT_DIR$/POS/src/Business/custom/ItemBO.java" />
+        <option value="$PROJECT_DIR$/POS/src/Controller/CustomerManageController.java" />
+        <option value="$PROJECT_DIR$/POS/src/Controller/ItemManageController.java" />
+        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/ItemDAOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderDetailsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderItemsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/src/Business/impl/ItemBOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/resources/application.properties" />
+        <option value="$PROJECT_DIR$/POS/src/Entities/Customer.java" />
+        <option value="$PROJECT_DIR$/POS/src/Entities/OrderDetails.java" />
+        <option value="$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/POS/src/Entities/OrderItems.java" />
+        <option value="$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java" />
+        <option value="$PROJECT_DIR$/POS/src/Controller/OrderItemController.java" />
       </list>
     </option>
   </component>
@@ -301,7 +466,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="35" />
     <option name="width" value="1065" />
     <option name="height" value="465" />
@@ -335,7 +500,44 @@
               <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
               <item name="POS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UtilityClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThogaKadePOSWithLayeredARCExtended" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POS" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,7 +550,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559017604260" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559042416523" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/POS/src/DAO/Impl" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/hibernate/txw2-2.3.1.jar!/" />
@@ -398,6 +600,13 @@
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Demo" />
       <module name="LamdaExpressionAndMethodRef" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="DAO" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -452,10 +661,12 @@
     <list>
       <item itemvalue="Application.AppInitializer" />
       <item itemvalue="Application.Demo" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppInitializer" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
@@ -486,15 +697,16 @@
       <workItem from="1553756940604" duration="22000" />
       <workItem from="1558196438431" duration="700000" />
       <workItem from="1558957414078" duration="2143000" />
-      <workItem from="1559013501309" duration="4088000" />
+      <workItem from="1559013501309" duration="22415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167074000" />
+    <option name="totallyTimeSpent" value="185401000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18791947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,24 +717,24 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.07248322" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14542936" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.367036" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30609417" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22818792" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963988" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32963988" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32963988" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.14496644" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.14404432" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.10536913" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.14161074" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295302" />
@@ -535,15 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/POS/src/Reports/PrintOrder.jrxml" />
-    <entry file="file://$PROJECT_DIR$/POS/src/VIew/OrderItem.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="46" column="88" lean-forward="true" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/POS/src/Reports/SubReport.jrxml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -554,27 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="976">
           <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Entities/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Entities/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -596,13 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -634,27 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderItemsDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderDetailsDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Controller/CustomerManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="75" column="98" selection-start-line="75" selection-start-column="98" selection-end-line="75" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/POS/src/Controller/SearchOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
@@ -666,37 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Controller/ItemManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1776">
-          <caret line="136" column="9" lean-forward="true" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Controller/OrderItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="146" column="19" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/UtilityClasses/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -714,33 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/CRUDUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/ItemDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/POS/src/DAO/DAO/custom/ItemDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -755,23 +851,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/CRUDDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/DAO/SuperDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -799,34 +878,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderItemsPK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/POS/src/Business/BOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/ItemBOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,10 +892,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Business/custom/OrderBO.java">
+    <entry file="file://$PROJECT_DIR$/POS/src/Business/BOTypes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/UtilityClasses/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/CRUDUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/VIew/OrderItem.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="46" column="88" lean-forward="true" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/CRUDDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/SuperDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,56 +967,201 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/POS/src/Business/custom/CustomerBO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/POS/src/Business/custom/ItemBO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        <state relative-caret-position="160">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/Business/BOTypes.java">
+    <entry file="file://$PROJECT_DIR$/POS/src/Controller/ItemManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6cf7ffd4-16af-49fe-96b6-cab4911d95bf/schema/simplepos/table/customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Controller/CustomerManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/ItemDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderDetailsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Business/custom/OrderBO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/OrderItemsDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        <state relative-caret-position="320">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java">
+    <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/ItemBOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="-224">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POS/.gitignore">
+    <entry file="file://$PROJECT_DIR$/POS/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="48">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/CustomerBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Entities/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Entities/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/UtilityClasses/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderItemsPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Entities/OrderItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="103" selection-start-line="17" selection-start-column="103" selection-end-line="17" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/DAO/custom/Impl/CustomerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Business/impl/OrderBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POS/src/Controller/OrderItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="150" column="2" selection-start-line="150" selection-start-column="2" selection-end-line="150" selection-end-column="2" />
         </state>
       </provider>
     </entry>

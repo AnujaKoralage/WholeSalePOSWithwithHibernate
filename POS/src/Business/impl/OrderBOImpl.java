@@ -4,16 +4,22 @@ import Business.custom.OrderBO;
 import DAO.CRUDDAO;
 import DAO.DAO.custom.CustomerDAO;
 import DAO.DAO.custom.ItemDao;
+import DAO.DAO.custom.OrderDetailsDAO;
 import DAO.DAO.custom.OrderItemsDAO;
 import DAO.DAOFactory;
 import DAO.DAOTypes;
+import DAO.custom.Impl.CustomerDAOImpl;
+import DAO.custom.Impl.ItemDAOImpl;
 import DAO.custom.Impl.OrderDetailsDAOImpl;
+import DAO.custom.Impl.OrderItemsDAOImpl;
 import DTO.ItemDTO;
 import DTO.OrderDetailsDTO;
 import Entities.Item;
 import Entities.OrderDetails;
 import Entities.OrderItems;
+import UtilityClasses.HibernateUtil;
 import javafx.collections.ObservableList;
+import org.hibernate.Session;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -24,29 +30,49 @@ import java.util.stream.Collectors;
 public class OrderBOImpl implements OrderBO {
 
 public String qtyGetByCode(String itemcode){
+    Session session = HibernateUtil.getSessionFactory().openSession();
     OrderDetailsDAOImpl orderDetailsDAO = new OrderDetailsDAOImpl();
+    orderDetailsDAO.setSession(session);
     return orderDetailsDAO.getQtyByCode(itemcode);
 }
 
     public void insertOrderDetails(OrderDetailsDTO orderDetailsDTO) throws Exception {
 
-        CRUDDAO dao = DAOFactory.getInstance().getDAO(DAOTypes.ORDER);
-        dao.save(new OrderDetails(orderDetailsDTO.getOrderid(),orderDetailsDTO.getCusid(),orderDetailsDTO.getOrderdate()));
+    try(Session session = HibernateUtil.getSessionFactory().openSession()) {
+
+        session.beginTransaction();
+        OrderDetailsDAOImpl dao = DAOFactory.getInstance().getDAO(DAOTypes.ORDER);
+        dao.setSession(session);
+        //dao.save(new OrderDetails(orderDetailsDTO.getOrderid(),orderDetailsDTO.getCusid(),orderDetailsDTO.getOrderdate()));
+        session.getTransaction().commit();
+    }
     }
 
     public void insertOrderItems(OrderDetailsDTO orderDetailsDTO) throws Exception {
-
-        CRUDDAO dao = DAOFactory.getInstance().getDAO(DAOTypes.ORDER_ITEMS);
+    try(Session session = HibernateUtil.getSessionFactory().openSession()) {
+        session.beginTransaction();
+        OrderItemsDAOImpl dao = DAOFactory.getInstance().getDAO(DAOTypes.ORDER_ITEMS);
+        dao.setSession(session);
         dao.save(new OrderItems(orderDetailsDTO.getOrderid(),orderDetailsDTO.getCusid(),orderDetailsDTO.getOrderdate()));
+        session.getTransaction().commit();
+        session.close();
+    }
     }
 
     public void updateItemQty(String qtyOnHand, String itemcode){
-        OrderItemsDAO dao = DAOFactory.getInstance().getDAO(DAOTypes.ORDER_ITEMS);
-        dao.updateQtyOnHand(qtyOnHand,itemcode);
+        try (Session session = HibernateUtil.getSessionFactory().openSession()){
+            session.beginTransaction();
+            OrderItemsDAOImpl dao = DAOFactory.getInstance().getDAO(DAOTypes.ORDER_ITEMS);
+            dao.setSession(session);
+            dao.updateQtyOnHand(qtyOnHand,itemcode);
+            session.getTransaction().commit();
+        }
     }
 
     public List<ItemDTO> allItems() throws Exception {
-        ItemDao dao = DAOFactory.getInstance().getDAO(DAOTypes.ITEM);
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        ItemDAOImpl dao = DAOFactory.getInstance().getDAO(DAOTypes.ITEM);
+        dao.setSession(session);
 
         return dao.findAll().stream().map(new Function<Item, ItemDTO>() {
             @Override
@@ -66,7 +92,9 @@ public String qtyGetByCode(String itemcode){
     }
 
     public ObservableList getAllCustomerId(ObservableList list) throws SQLException {
-        CustomerDAO dao = DAOFactory.getInstance().getDAO(DAOTypes.CUSTOMER);
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        CustomerDAOImpl dao = DAOFactory.getInstance().getDAO(DAOTypes.CUSTOMER);
+        dao.setSession(session);
         ObservableList id = dao.getId(list);
 
         return id;

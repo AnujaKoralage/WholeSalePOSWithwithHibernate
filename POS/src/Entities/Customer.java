@@ -1,10 +1,21 @@
 package Entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
+
+@Entity
 public class Customer extends SuperEntity{
 
+    @Id
     private String id;
     private String name;
     private String address;
+
+    @OneToMany(mappedBy = "cusid")
+    private
+    List<OrderDetails> orderDetails;
 
     public Customer() {
     }
@@ -46,5 +57,14 @@ public class Customer extends SuperEntity{
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+
+    public List<OrderDetails> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(List<OrderDetails> orderDetails) {
+        this.orderDetails = orderDetails;
     }
 }
