@@ -1,11 +1,22 @@
 package Entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
+
+@Entity
 public class Item extends SuperEntity{
 
+    @Id
     private String code;
     private String description;
     private String qty;
     private String price;
+
+    @OneToMany(mappedBy = "item")
+    private
+    List<OrderItems> orderItems;
 
     public Item() {
     }
@@ -58,4 +69,9 @@ public class Item extends SuperEntity{
                 ", price='" + price + '\'' +
                 '}';
     }
+
+    public List<OrderItems> getOrderItems() {
+        return orderItems;
+    }
+
 }

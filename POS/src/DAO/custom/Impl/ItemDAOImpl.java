@@ -3,6 +3,7 @@ package DAO.custom.Impl;
 import DAO.DAO.custom.ItemDao;
 import Entities.Item;
 import UtilityClasses.DBConnection;
+import org.hibernate.Session;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,45 +14,37 @@ import java.util.List;
 
 public class ItemDAOImpl implements ItemDao {
 
-    public boolean save(Item item) throws SQLException {
-        String sql = "INSERT INTO Item VALUES(?,?,?,?)";
+    private Session session;
 
-        return CRUDUtil.execute(sql,item.getCode(),item.getDescription(),item.getQty(),item.getPrice());
-
+    public void save(Item item) throws Exception {
+        session.save(item);
     }
 
-    public boolean update(Item item) throws SQLException {
-        String sql = "UPDATE Item SET description=?,qty=?,price=? WHERE code=?";
-
-        return CRUDUtil.execute(sql,item.getDescription(),item.getQty(),item.getPrice(),item.getCode());
+    public void update(Item item) throws Exception {
+        session.merge(item);
     }
 
-    public  boolean delete(String code) throws SQLException {
-        String sql = "DELETE FROM Item WHERE code=?";
-
-        return CRUDUtil.execute(sql,code);
+    public void delete(String code) throws Exception {
+        Item item = session.load(Item.class,code);
+        session.delete(item);
     }
 
-    public List<Item> findAll() throws SQLException {
-        String sql = "SELECT * FROM Item";
+    public List<Item> findAll() throws Exception {
+        List<Item> list = session.createNativeQuery("SELECT * FROM Item", Item.class).list();
 
-        ArrayList<Item> arrayList = new ArrayList<>();
-        ResultSet rst = CRUDUtil.execute(sql);
-
-        while (rst.next()){
-            arrayList.add(new Item(rst.getString("code"),rst.getString("description"),rst.getString("qty"),rst.getString("price")));
-        }
-        return arrayList;
+        return list;
     }
 
-    public Item find(String code) throws SQLException {
-        String sql = "SELECT * FROM Item WHERE code=?";
-
-        ResultSet rst = CRUDUtil.execute(sql,code);
-        if (rst.next())
-            return new Item(rst.getString("code"),rst.getString("description"),rst.getString("qty"),rst.getString("price"));
-        else
-            return null;
+    public Item find(String code) throws Exception {
+        Item item = session.createNativeQuery("SELECT * FROM Item WHERE code=?", Item.class).setParameter(1,code).uniqueResult();
+        return item;
     }
-    
+
+    public Session getSession() {
+        return session;
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
+    }
 }

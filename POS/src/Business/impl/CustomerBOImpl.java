@@ -10,6 +10,8 @@ import DAO.custom.Impl.OrderDetailsDAOImpl;
 import DTO.CustomerDTO;
 import Entities.Customer;
 import Entities.OrderDetails;
+import UtilityClasses.HibernateUtil;
+import org.hibernate.Session;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +23,11 @@ import java.util.stream.Stream;
 
 public class CustomerBOImpl implements CustomerBO {
 
-    private CustomerDAO customerDAO = (CustomerDAO) DAOFactory.getInstance().getDAO(DAOTypes.CUSTOMER);
+    private CustomerDAOImpl customerDAO = DAOFactory.getInstance().getDAO(DAOTypes.CUSTOMER);
+    private Session session = HibernateUtil.getSessionFactory().openSession();
 
     public List<CustomerDTO> allCustomers() throws Exception {
+        customerDAO.setSession(session);
         return customerDAO.findAll().stream().map(new Function<Customer, CustomerDTO>() {
             @Override
             public CustomerDTO apply(Customer customer) {
@@ -40,6 +44,7 @@ public class CustomerBOImpl implements CustomerBO {
     }
 
     public void saveCustomer(CustomerDTO customer) throws Exception {
+        customerDAO.setSession(session);
         Customer cusentity = new Customer(customer.getId(),customer.getName(),customer.getAddress());
 
         CustomerDAO cusDao = new CustomerDAOImpl();
@@ -47,15 +52,15 @@ public class CustomerBOImpl implements CustomerBO {
         
     }
 
-    public boolean deleteCustomer(String id) throws Exception {
-        boolean b = customerDAO.delete(id);
-
-        return b;
-
+    public void deleteCustomer(String id) throws Exception {
+        customerDAO.setSession(session);
+        customerDAO.delete(id);
     }
 
     public boolean customerExistsinOrder(String id) throws Exception {
+        customerDAO.setSession(session);
         OrderDetailsDAO od = new OrderDetailsDAOImpl();
+        ((OrderDetailsDAOImpl) od).setSession(session);
 
         /*Stream<OrderDetails> orderDetailsStream = od.findAll().stream().filter(new Predicate<OrderDetails>() {
             @Override
@@ -77,10 +82,9 @@ public class CustomerBOImpl implements CustomerBO {
         return false;
     }
 
-    public boolean updateCustomer(CustomerDTO customer) throws Exception {
-        boolean b = customerDAO.update(new Customer(customer.getId(), customer.getName(), customer.getAddress()));
-
-        return b;
+    public void updateCustomer(CustomerDTO customer) throws Exception {
+        customerDAO.setSession(session);
+        customerDAO.update(new Customer(customer.getId(), customer.getName(), customer.getAddress()));
     }
 
 }

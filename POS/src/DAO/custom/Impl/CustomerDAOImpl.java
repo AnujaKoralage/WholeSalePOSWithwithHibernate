@@ -4,6 +4,7 @@ import DAO.DAO.custom.CustomerDAO;
 import Entities.Customer;
 import UtilityClasses.DBConnection;
 import javafx.collections.ObservableList;
+import org.hibernate.Session;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,54 +16,46 @@ import java.util.Observable;
 
 public class CustomerDAOImpl implements CustomerDAO {
 
+    private Session session;
     @Override
-    public boolean save(Customer customer) throws SQLException {
-        String sql = "INSERT INTO customer VALUES(?,?,?)";
-
-        return CRUDUtil.execute(sql,customer.getId(),customer.getName(),customer.getAddress());
-
+    public void save(Customer customer) throws Exception {
+        session.save(customer);
     }
 
-    public boolean update(Customer customer) throws SQLException {
-        String sql = "UPDATE customer SET name=?,address=? WHERE id=?";
-
-        return CRUDUtil.execute(sql,customer.getName(),customer.getAddress(),customer.getId());
+    public void update(Customer customer) throws Exception {
+        session.merge(customer);
     }
 
-    public  boolean delete(String id) throws SQLException {
-        String sql = "DELETE FROM customer WHERE id=?";
-
-        return CRUDUtil.execute(sql,id);
+    public  void delete(String id) throws Exception {
+        Customer customer = session.load(Customer.class, id);
+        session.delete(customer);
     }
 
-    public List<Customer> findAll() throws SQLException {
-        String sql = "SELECT * FROM customer";
-        ResultSet rst = CRUDUtil.execute(sql);
-        ArrayList<Customer> arrayList = new ArrayList<>();
+    public List<Customer> findAll() throws Exception {
 
-        while (rst.next()){
-            arrayList.add(new Customer(rst.getString("id"),rst.getString("name"),rst.getString("address")));
-        }
-        return arrayList;
+        List<Customer> list = session.createQuery("From Entities.Customer",Customer.class).list();
+
+        return list;
     }
 
-    public Customer find(String id) throws SQLException {
-        String sql = "SELECT * FROM customer WHERE id=?";
-        ResultSet rst = CRUDUtil.execute(sql,id);
-        if (rst.next())
-            return new Customer(rst.getString("id"),rst.getString("name"),rst.getString("address"));
-        else
-            return null;
+    public Customer find(String id) throws Exception {
+        Customer customer = session.createNativeQuery("SELECT * FROM customer WHERE id=?", Customer.class).setParameter(1,id).uniqueResult();
+        return customer;
     }
 
     public ObservableList getId(ObservableList cids) throws SQLException {
-        String sql1 = "SELECT id FROM customer";
-        ResultSet rst1 = CRUDUtil.execute(sql1);
-
-        while (rst1.next()){
-            cids.add(rst1.getString("id"));
+        List<Customer> cus = session.createNativeQuery("SELECT id FROM customer", Customer.class).list();
+        for (int i=0;i<cus.size();i++){
+            cids.add(cus.get(i).getId());
         }
         return cids;
     }
 
+    public Session getSession() {
+        return session;
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
+    }
 }

@@ -78,16 +78,16 @@ public class ItemManageController {
                                             alt.show();
                                         }
                                         else {
-                                            boolean b = itemBOImpl.deleteItem(item.getCode());
-                                            if (b){
+                                            try {
+                                                itemBOImpl.deleteItem(item.getCode());
+
                                                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION,"Item deleted");
                                                 alert.show();
                                                 tbl_cus.getItems().remove(item);
-                                            }else {
+                                            }catch (Exception e){
                                                 Alert alert = new Alert(Alert.AlertType.ERROR,"Item was not deleted");
                                                 alert.show();
                                             }
-
                                         }
 
                                     } catch (SQLException e) {
@@ -130,12 +130,11 @@ public class ItemManageController {
         }
         ObservableList item = (ObservableList) tbl_cus.getItems();
         ItemBOImpl itemBOImpl = new ItemBOImpl();
-        boolean b = itemBOImpl.saveItem(new ItemDTO(txt_itemCode.getText(), txt_itmDes.getText(), txt_itmQty.getText(), txt_itmPrice.getText()));
-        if (b){
+        try {
+            itemBOImpl.saveItem(new ItemDTO(txt_itemCode.getText(), txt_itmDes.getText(), txt_itmQty.getText(), txt_itmPrice.getText()));
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION,"Item saved");
             alert.show();
-        }
-        else {
+        }catch (Exception e){
             Alert alert = new Alert(Alert.AlertType.ERROR,"Item not saved");
             alert.show();
         }
@@ -166,16 +165,19 @@ public class ItemManageController {
         ObservableList item = tbl_cus.getItems();
         item.clear();
         ItemBOImpl itemBOImpl = new ItemBOImpl();
-        boolean b = itemBOImpl.updateItem(new ItemDTO(txt_itemCode.getText(), txt_itmDes.getText(), txt_itmQty.getText(), txt_itmPrice.getText()));
+        try {
+            itemBOImpl.updateItem(new ItemDTO(txt_itemCode.getText(), txt_itmDes.getText(), txt_itmQty.getText(), txt_itmPrice.getText()));
 
-        if (b){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION,"Item saved");
             alert.show();
 
             for (ItemDTO itemDTO: itemBOImpl.getAllItems()) {
                 item.add(new Item(itemDTO.getCode(),itemDTO.getDescription(),itemDTO.getQty(),itemDTO.getPrice()));
             }
+        }catch (Exception e){
+
         }
+
     }
 
     public void generateItemReport(ActionEvent actionEvent) throws JRException {

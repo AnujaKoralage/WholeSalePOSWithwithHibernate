@@ -1,14 +1,24 @@
 package Entities;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
 public class OrderDetails extends SuperEntity{
+    @Id
     private String orderid;
-    private String cusid;
+    @ManyToOne
+    @JoinColumn(name = "cusid",referencedColumnName = "id")
+    private Customer cusid;
     private String orderdate;
+
+    @OneToMany(mappedBy = "orderDetails")
+    private List<OrderItems> orderItems;
 
     public OrderDetails() {
     }
 
-    public OrderDetails(String orderid, String cusid, String orderdate) {
+    public OrderDetails(String orderid, Customer cusid, String orderdate) {
         this.orderid = orderid;
         this.cusid = cusid;
         this.orderdate = orderdate;
@@ -22,11 +32,11 @@ public class OrderDetails extends SuperEntity{
         this.orderid = orderid;
     }
 
-    public String getCusid() {
+    public Customer getCusid() {
         return cusid;
     }
 
-    public void setCusid(String cusid) {
+    public void setCusid(Customer cusid) {
         this.cusid = cusid;
     }
 
@@ -46,4 +56,9 @@ public class OrderDetails extends SuperEntity{
                 ", orderdate='" + orderdate + '\'' +
                 '}';
     }
+
+    public List<OrderItems> getOrderItems() {
+        return orderItems;
+    }
+
 }

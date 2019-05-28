@@ -164,20 +164,19 @@ public class CustomerManageController {
         String cusaddress = cus_address.getText();
 
         CustomerBOImpl customerBOImpl = new CustomerBOImpl();
-        boolean b = customerBOImpl.updateCustomer(new CustomerDTO(cusid, cusname, cusaddress));
-
-        if (b){
+        try {
+            customerBOImpl.updateCustomer(new CustomerDTO(cusid, cusname, cusaddress));
             Alert alt = new Alert(Alert.AlertType.CONFIRMATION,"Customer updated");
             alt.show();
 
             for (CustomerDTO customer: customerBOImpl.allCustomers()) {
                 items.add(new Customer(customer.getId(),customer.getName(),customer.getAddress()));
             }
-        }
-        else {
+        }catch (Exception e){
             Alert alert = new Alert(Alert.AlertType.ERROR,"Customer not updated");
             alert.show();
         }
+
     }
 
     public void generateCustomerReport(ActionEvent actionEvent) throws JRException {
